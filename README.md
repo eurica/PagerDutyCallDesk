@@ -13,5 +13,5 @@ This is not an officially supported PagerDuty product, and not covered by our SL
 
 # Walkthrough
 
-!(help/TwilioConfig.png)
+![TwilioConf](help/TwilioConfig.png)
 

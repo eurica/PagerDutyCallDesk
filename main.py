@@ -78,7 +78,7 @@ class RecordHandler(webapp.RequestHandler):
 class IndexHandler(webapp.RequestHandler):
   def get(self):
     response = ("<html><h1>Trigger a <a href='http://www.pagerduty.com'>PagerDuty</a> incident from a phone call</h1><ul>"
-      "<li><a href='http://blog.pagerduty.com/2012/02/23/triggering-an-alert-from-a-phone-call'>Docs</a>"
+      "<li><a href='http://blog.pagerduty.com/2012/02/23/triggering-an-alert-from-a-phone-call'>About</a>"
       "<li><a href='https://github.com/eurica/PagerDutyCallDesk/'>GitHub page</a>"
       "<li><a href='/call'>/call</a> (returns XML)"
       "<li><a href='/record?RecordingUrl=http%3A%2F%2Fapi.twilio.com%2F2010-04-01%2FAccounts%2FACfdf710462c058abf3a987f393e8e9bc8%2FRecordings%2FRE6f523cd7734fa86e56e5ef0ea5ffd4cf'>/record</a> (test with 'Hey this is Jim...')"
