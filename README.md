@@ -9,9 +9,16 @@ This is not an officially supported PagerDuty product, and not covered by our SL
 3. Change the "application: pdtestthrough" line in app.yaml to your application identifier, and the SERVICE_KEY = "6f4d18600a9b012f6a9722000a9040cf" line in main.py to your service API key
 4. Deploy to [Google App Engine](https://appengine.google.com)
 5. Create a [Twilio](http://twilio.com) account, and set up an incoming phone number to point to http://[your-application-identifier].appspot.com/call
-6. Call that number and leave a message.
+6. Call that number and leave a message, you'll trigger an alert that links to the MP3 recording of the call:
+    ALRT #145 on Phone in: <a href="http://goo.gl/UMmDx">http://goo.gl/UMmDx</a> <a href="#">+14153490382</a> Reply 4:Ack, 6:Resolv.
 
-# Walkthrough
+# Walkthrough in pictures:
 
-![TwilioConf](help/TwilioConfig.png)
+![PagerDuty Setup](/eurica/PagerDutyCallDesk/raw/master/help/PAgerDutyAPI.png)
+
+![Google setup](/eurica/PagerDutyCallDesk/raw/master/help/AppEngineApplication.png)
+
+![TwilioConf](/eurica/PagerDutyCallDesk/raw/master/help/TwilioConfig.png)
+
+![Triggers](/eurica/PagerDutyCallDesk/raw/master/help/incident.png)
 
