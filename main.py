@@ -47,13 +47,14 @@ class RecordHandler(webapp.RequestHandler):
     logging.info('Recieved RECORDING ' + recUrl)
     if(recUrl):
       logging.info('Found recording!')
+      recUrl = recUrl + '.mp3' #There's better support for URLs that include the .mp3
     else:
-      recUrl = "http%3A%2F%2Fwww.pagerduty.com%2F"
+      recUrl = "https://github.com/eurica/PagerDutyCallDesk/" # I don't know what I should do with incidents that don't include an MP3
       phonenumber = ""
     shrten = "Error"
     
     try:
-      shrten = shorten('%s.mp3' % recUrl)
+      shrten = shorten(recUrl)
     except HTTPError, e:
       shrten = "HTTPError"
       logging.warn( e.code )
@@ -75,10 +76,11 @@ class RecordHandler(webapp.RequestHandler):
     except URLError, e:
       logging.warn(e.reason)   
 
+# A somewhat descriptive index page
 class IndexHandler(webapp.RequestHandler):
   def get(self):
     response = ("<html><h1>Trigger a <a href='http://www.pagerduty.com'>PagerDuty</a> incident from a phone call</h1><ul>"
-      "<li><a href='http://blog.pagerduty.com/2012/02/23/triggering-an-alert-from-a-phone-call'>About</a>"
+      "<li><a href='http://blog.pagerduty.com/2012/02/triggering-an-alert-from-a-phone-call'>About</a>"
       "<li><a href='https://github.com/eurica/PagerDutyCallDesk/'>GitHub page</a>"
       "<li><a href='/call'>/call</a> (returns XML)"
       "<li><a href='/record?RecordingUrl=http%3A%2F%2Fapi.twilio.com%2F2010-04-01%2FAccounts%2FACfdf710462c058abf3a987f393e8e9bc8%2FRecordings%2FRE6f523cd7734fa86e56e5ef0ea5ffd4cf'>/record</a> (test with 'Hey this is Jim...')"

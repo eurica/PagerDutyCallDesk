@@ -23,3 +23,8 @@ This is not an officially supported PagerDuty product, and not covered by our SL
 
 ![Triggers](/eurica/PagerDutyCallDesk/raw/master/help/incident.png)
 
+# Background
+
+We have regular hackdays at <a href="http://www.pagerduty.com">PagerDuty</a>, where we build things outside the core product without management (another reason you should <a href="//www.pagerduty.com/jobs">work here</a>).  A few weeks ago, I rolled out a proof of concept <a href="">Google App Engine</a> script to use Twilio to record a voicemail and then to pass it around like a regular alert.  Triggering alerts from phone calls hasn't made it's way on to the development roadmap, so I'm sharing this code sample as a work around for our more technically inclined users -- so all the usual caveats and disclaimers apply, namely that our SLAs don't apply.
+
+<a href="http://twilio.com">Twilio</a> will happily turn a phone call into an MP3 and give us a link to it (which means to get this to work you're going to need to sign up for a Twilio account as well as a <a href="https://appengine.google.com">Google App Engine</a> account).  We then use Google's URL shortener to shrink the URL into something that will fit in an SMS -- all modern smart phones can figure out what to do with that. -- [Source](http://blog.pagerduty.com/index.php/2012/02/triggering-an-alert-from-a-phone-call-code-sample)

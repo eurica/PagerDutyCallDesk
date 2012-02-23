@@ -1,16 +1,9 @@
 application: pdtestthrough
-version: 1
+version: 1.1
 runtime: python
 api_version: 1
 
-inbound_services:
-- mail
-
 handlers:
-- url: /_ah/mail/.+ 
-  script: main.py 
-  login: admin
-
 - url: .*
   script: main.py
 
