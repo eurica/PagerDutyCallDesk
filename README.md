@@ -15,13 +15,13 @@ This is not an officially supported PagerDuty product, and not covered by our SL
 
 # Walkthrough in pictures:
 
-![PagerDuty Setup](/eurica/PagerDutyCallDesk/raw/master/help/PagerDutyAPI.png)
+![PagerDuty Setup](https://raw.github.com/eurica/PagerDutyCallDesk/raw/master/help/PagerDutyAPI.png)
 
-![Google setup](/eurica/PagerDutyCallDesk/raw/master/help/AppEngineApplication.png)
+![Google setup](https://raw.github.com/eurica/PagerDutyCallDesk/raw/master/help/AppEngineApplication.png)
 
-![TwilioConf](/eurica/PagerDutyCallDesk/raw/master/help/TwilioConfig.png)
+![TwilioConf](https://raw.github.com/eurica/PagerDutyCallDesk/raw/master/help/TwilioConfig.png)
 
-![Triggers](/eurica/PagerDutyCallDesk/raw/master/help/incident.png)
+![Triggers](https://raw.github.com/eurica/PagerDutyCallDesk/raw/master/help/incident.png)
 
 # Background
 
